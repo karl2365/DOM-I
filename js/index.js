@@ -33,7 +33,7 @@ const siteContent = {
     "email" : "sales@greatidea.io",
   },
   "footer": {
-    "copyright" : "Copyright Great Idea! 2018"
+    "copyright" : "Copyright &copy; Great Idea! 2019"
   },
 };
 
@@ -84,6 +84,13 @@ mainImage.src = siteContent['cta']['img-src'];
 const button = document.querySelector('.cta-text button');
 button.innerHTML = "Get Started";
 
+button.addEventListener('click', function(){
+  h1.innerHTML = "clicked!";
+  h1.style.color = "blue";
+})
+
+
+
 const midImg = document.getElementById('middle-img');
 midImg.src = "img/mid-page-accent.jpg";
 
@@ -109,6 +116,11 @@ contactInfo[1].textContent = siteContent["contact"]["phone"];
 contactInfo[2].textContent = siteContent["contact"]["email"];
 
 const footer = document.querySelector("footer p");
-footer.textContent = siteContent["footer"]["copyright"];
+footer.innerHTML = siteContent["footer"]["copyright"];
+
+const subHeads = document.querySelectorAll("h4");
+for (let i = 0;i<subHeads.length;i++){
+  subHeads[i].style.color = "blue";
+}
 
 
