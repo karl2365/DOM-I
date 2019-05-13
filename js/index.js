@@ -49,6 +49,32 @@ nav[3].textContent = 'Features';
 nav[4].textContent = 'About';
 nav[5].textContent = 'Contact';
 
+const navBar = document.querySelector("header nav");
+
+const nApp = document.createElement("a");
+nApp.href = "#";
+nApp.textContent = 'Append'
+nApp.style.color = "green"
+navBar.appendChild(nApp)
+
+const nPre = document.createElement("a");
+nPre.href = "#";
+nPre.textContent = 'Prepend'
+nPre.style.color = "green"
+navBar.prepend(nPre)
+
+
+
+
+
+for (let i = 0; i < nav.length; i++){
+  nav[i].style.color = "green";
+}
+
+
+
+
+
 const h1 = document.querySelector(".cta-text h1");
 h1.innerHTML = "DOM<br>is<br>awesome";
 
