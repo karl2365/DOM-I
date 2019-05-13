@@ -122,5 +122,11 @@ const subHeads = document.querySelectorAll("h4");
 for (let i = 0;i<subHeads.length;i++){
   subHeads[i].style.color = "blue";
 }
+footer.style.fontFamily = "cursive";
 
+button.style.borderRadius = "7px";
 
+const mainCon = document.querySelector('.main-content');
+
+mainCon.style.borderTop = '2px solid red'; 
+mainCon.style.borderBottom = '2px solid red'; 
