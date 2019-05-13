@@ -40,3 +40,49 @@ const siteContent = {
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+
+const nav = document.querySelectorAll('nav a');
+nav[0].textContent = 'Services';
+nav[1].textContent = 'Product';
+nav[2].textContent = 'Vision';
+nav[3].textContent = 'Features';
+nav[4].textContent = 'About';
+nav[5].textContent = 'Contact';
+
+const h1 = document.querySelector(".cta-text h1");
+h1.innerHTML = "DOM<br>is<br>awesome";
+
+const mainImage = document.getElementById('cta-img');
+mainImage.src = siteContent['cta']['img-src'];
+
+const button = document.querySelector('.cta-text button');
+button.innerHTML = "Get Started";
+
+const midImg = document.getElementById('middle-img');
+midImg.src = "img/mid-page-accent.jpg";
+
+const topContent = document.querySelectorAll(".main-content .top-content .text-content")
+
+topContent[0].innerHTML = '<h4>features</h4><p>' + siteContent["main-content"]["features-content"] + '</p>';
+
+topContent[1].innerHTML = '<h4>about</h4><p>' + siteContent["main-content"]["about-content"] + '</p>';
+
+const bottomContent = document.querySelectorAll(".main-content .bottom-content .text-content");
+
+bottomContent[0].innerHTML = '<h4>services</h4><p>' + siteContent["main-content"]["services-content"] + '</p>';
+bottomContent[1].innerHTML = '<h4>product</h4><p>' + siteContent["main-content"]["product-content"] + '</p>';
+bottomContent[2].innerHTML = '<h4>vision</h4><p>' + siteContent["main-content"]["vision-content"] + '</p>';
+
+const btmHead = document.querySelector('.contact h4');
+btmHead.textContent = "contact";
+
+const contactInfo = document.querySelectorAll('.contact p');
+
+contactInfo[0].textContent = siteContent["contact"]["address"];
+contactInfo[1].textContent = siteContent["contact"]["phone"];
+contactInfo[2].textContent = siteContent["contact"]["email"];
+
+const footer = document.querySelector("footer p");
+footer.textContent = siteContent["footer"]["copyright"];
+
+
